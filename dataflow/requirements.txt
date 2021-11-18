@@ -1,9 +1,0 @@
-apache-beam[gcp]
-google-cloud
-google-cloud-bigquery
-google-cloud-dataflow
-google-cloud-datastore
-google-cloud-pubsub
-google-cloud-storage
-google-cloud-vision
-mock
