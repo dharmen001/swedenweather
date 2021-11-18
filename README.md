@@ -30,6 +30,8 @@ This is the task to load the weather(Pressure and Temperature) data into two dif
 7. Obtains user access credentials & authenticate using gcloud auth application-default login.
 
 8. Run the below command to create a Dataflow template.
+
+
   **a. # Schema_1756**
   python3 load-to-bq-pressure-1756.py --runner DataFlowRunner --project $DEVSHELL-PROJECT-ID --temp_location gs://air-pressure-templates/temp --staging_location gs://air-pressure -templates/staging --region us-central1 --template_location gs://air-pressure-templates/templates/SKU_Data_air_pressure_general  --experiment=use_beam_bq_sink
   
