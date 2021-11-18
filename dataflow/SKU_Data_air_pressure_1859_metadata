@@ -1,0 +1,20 @@
+{
+  "name": "SKU_Data_metadata",
+  "description": "A pipeline which Loads data from GCS and inserts into BQ",
+  "parameters": [
+    {
+      "name": "input",
+      "label": "A file in a Google Storage Bucket.",
+      "helpText": "The input filepattern to read from (e.g., gs://bucket-name/uncompressed/*.txt)",
+      "regexes": [
+        "^gs:\\/\\/[^\\n\\r]+$"
+      ],
+      "paramType": "TEXT"
+    },
+	{
+      "name": "tableId",
+      "label": "projectid:dataset.table",
+      "paramType": "TEXT"
+    } 	
+  ]
+}
